@@ -1,5 +1,5 @@
 ﻿using System;
-
+namespace OwareNsvisEdition;
 public class Table
 {
     private int[,] board;

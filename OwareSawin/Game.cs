@@ -1,5 +1,5 @@
 ﻿using System;
-
+namespace OwareNsvisEdition;
 public class GameLoop
 {
     private const int Players = 2;
