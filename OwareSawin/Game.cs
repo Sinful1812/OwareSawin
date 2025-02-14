@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Game
+public class GameLoop
 {
     private const int Players = 2;
     private const int Pots = 6;
@@ -11,7 +11,7 @@ public class Game
     private int Playing = 0;
     private Table tableDisplay;
 
-    public Game()
+    public GameLoop()
     {
         for (int i = 0; i < Lines; i++)
         {
@@ -23,7 +23,7 @@ public class Game
         tableDisplay = new Table(board, points);
     }
 
-    public void GameLoop()
+    public void Looper()
     {
         while (!EndGame())
         {

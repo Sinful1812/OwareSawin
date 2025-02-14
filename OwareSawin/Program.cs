@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Game game = new Game();
-        game.GameLoop();
+        GameLoop game = new GameLoop();
+        game.Looper();
     }
 }
