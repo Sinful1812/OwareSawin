@@ -29,7 +29,7 @@ public class GameOware
         while (!IsEndGame())
         {
             tableDisplay.ShowTable(currentPlayer);
-            Console.Write("Choose a column (A-F): ");
+            Console.Write("Select A-F: ");
             string input = Console.ReadLine().ToUpper();
 
             int column = input[0] - 'A';
