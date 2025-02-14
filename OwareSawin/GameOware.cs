@@ -35,7 +35,7 @@ public class GameOware
             int column = input[0] - 'A';
             if (column < 0 || column >= Columns || board[currentPlayer, column] == 0)
             {
-                Console.WriteLine("Invalid move. Try again.");
+                Console.WriteLine("No Seed Left.");
                 continue;
             }
 
