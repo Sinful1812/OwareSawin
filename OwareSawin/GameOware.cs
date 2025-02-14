@@ -29,7 +29,6 @@ public class GameOware
         while (!IsEndGame())
         {
             tableDisplay.ShowTable(currentPlayer);
-            Console.WriteLine($"Player {currentPlayer + 1}'s turn");
             Console.Write("Choose a column (A-F): ");
             string input = Console.ReadLine().ToUpper();
 
