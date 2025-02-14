@@ -1,13 +1,13 @@
 ﻿using System;
 
-public class TableDisplay
+public class Table
 {
     private int[,] board;
     private int[] points;
-    private const int Columns = 6;
-    private const int Rows = 2;
+    private const int Pots = 6;
+    private const int Lines = 2;
 
-    public TableDisplay(int[,] board, int[] points)
+    public Table(int[,] board, int[] points)
     {
         this.board = board;
         this.points = points;
@@ -18,7 +18,7 @@ public class TableDisplay
         Console.Clear();
         Console.WriteLine("        A   B   C   D   E   F");
         Console.WriteLine("       -----------------------");
-        for (int i = 0; i < Rows; i++)
+        for (int i = 0; i < Lines; i++)
         {
             if (i == 0)
             {
@@ -29,7 +29,7 @@ public class TableDisplay
                 Console.Write((currentPlayer == 1 ? "-> P2 " : "   P2 "));
             }
 
-            for (int j = 0; j < Columns; j++)
+            for (int j = 0; j < Pots; j++)
             {
                 Console.Write($"| {board[i, j]} ");
             }

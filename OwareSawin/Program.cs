@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        GameOware game = new GameOware();
+        Game game = new Game();
         game.GameLoop();
     }
 }
